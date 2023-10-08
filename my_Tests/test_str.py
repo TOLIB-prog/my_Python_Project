@@ -76,3 +76,53 @@ elements:").strip().split()))[:n]
 
 # printing the list
 print('The list is:', lst)
+
+# Adding items to a list, использование метода append()
+list_d = []
+print('Initial blank list: ')
+print(list_d)
+
+list_d.append(1)
+list_d.append(2)
+list_d.append(3)
+print("\nТри элемента добавленный в список: ")
+print(list_d)
+
+# Добавление элемента с использованием цикла for
+
+for i in range(4, 10):
+	list_d.append(i)
+print("\nдобавление элементов в список от 4 - 9")
+print(list_d)
+
+# Добавление списка в картеж
+list_d.append((10,11))
+print("\nList after addition of a Tuple: ")
+print(list_d)
+# ДОБАВЛЕНИЕ СПИСКА В СПИСОК
+list_e = ['For', 'Way']
+list_d.append(list_e)
+print("\nДобавление списка в конце списка: ")
+print(list_d)
+
+# Исползование метода insert()
+list_k = [1, 2, 3, 4]
+print("Initial list: ")
+print(list_k)
+
+# Добавление элемента в специальные позиции
+list_k.insert(3, 9)
+list_k.insert(0, "Grand")
+print("\nСписок после выполнения операции вставки: ")
+print(list_k)
+
+# использования метода extend()
+
+list_k = [1, 2, 3, 4]
+print("Initial list: ")
+print(list_k)
+
+# Добавления нескольких элементов в конце списка
+list_k.extend([5, 6, 7, 8, "Generation", "Most People"])
+print("\nСписок после выполнения операции расширения: ")
+print(list_k)
